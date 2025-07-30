@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <title>Gallery - LE SHOT FOOTY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e6f2f1;
+            color: #033a2e;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #028090;
+            padding: 15px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+        footer {
+            background: #028090;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        /* ตัวอย่างรูปใน Gallery */
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery-container img {
+            width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="LE SHOT FOOTY Logo" style="height:50px;"/>
+        <h1>LE SHOT FOOTY</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="images/photo1.jpg" alt="Photo 1" />
+            <img src="images/photo2.jpg" alt="Photo 2" />
+            <img src="images/photo3.jpg" alt="Photo 3" />
+            <!-- เพิ่มรูปอื่นๆได้ -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact us: leozaw18@gmail.com | 0955379097</p>
+    </footer>
+</body>
+</html>

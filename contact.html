@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact - LE SHOT FOOTY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e6f2f1;
+            color: #033a2e;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #028090;
+            padding: 15px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        footer {
+            background: #028090;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background: #028090;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #026f72;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="LE SHOT FOOTY Logo" style="height:50px;"/>
+        <h1>LE SHOT FOOTY</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">ชื่อ</label>
+            <input type="text" id="name" name="name" placeholder="ชื่อของคุณ" required />
+
+            <label for="email">อีเมล</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required />
+
+            <label for="message">ข้อความ</label>
+            <textarea id="message" name="message" rows="5" placeholder="พิมพ์ข้อความที่นี่..." required></textarea>
+
+            <button type="submit">ส่งข้อความ</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contact us: leozaw18@gmail.com | 0955379097</p>
+    </footer>
+</body>
+</html>

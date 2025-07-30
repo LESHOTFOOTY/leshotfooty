@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main  # หรือชื่อ branch ของคุณ
+
+media_folder: "images/uploads"       # ที่เก็บรูปใน repo
+public_folder: "/images/uploads"     # ที่ใช้เรียกรูปในเว็บ
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Home"
+        name: "home"
+      - file: "gallery.html"
+        label: "Gallery"
+        name: "gallery"
+      - file: "about.html"
+        label: "About"
+        name: "about"
+      - file: "contact.html"
+        label: "Contact"
+        name: "contact"
+
+  - name: "gallery_images"
+    label: "Gallery Images"
+    folder: "images/gallery"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
